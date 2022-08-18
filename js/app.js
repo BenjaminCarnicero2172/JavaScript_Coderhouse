@@ -1,4 +1,3 @@
-console.log('hola desde app.js')
 
 let gmail = 'coderhouse@gmail.com';
 let mail = prompt ('Ingrese su email');
@@ -84,3 +83,23 @@ const search = () => {
     console.log(searchResult);
 }
 searchBar.addEventListener('input', search)
+
+// Storage
+// localStorage.setItem('nombreDelUsuario', 'Benjamin')
+
+ const objetoJavascript = {
+    nombre: 'Benjamin',
+    apellido: 'Carnicero',
+    edad: '18',
+    email:'Benjacarni397@gmail.com'
+}
+ const objetoString = JSON.stringify(objetoJavascript)
+
+//  localStorage.setItem('objetoJavascript', objetoJavascript)
+//  localStorage.setItem('objetoString', objetoString)
+
+ const datoGuardadoString = localStorage.getItem('objetoString')
+ const datoGuardadoJavascript = JSON.parse(datoGuardadoString)
+
+ console.log(datoGuardadoString)
+ console.log(datoGuardadoJavascript.apellido)
