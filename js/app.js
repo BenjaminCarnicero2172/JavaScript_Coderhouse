@@ -1,42 +1,42 @@
 
-let gmail = 'coderhouse@gmail.com';
-let mail = prompt ('Ingrese su email');
+// let gmail = 'coderhouse@gmail.com';
+// let mail = prompt ('Ingrese su email');
 
-while(gmail != mail)
-{
-    alert('Dirección de email incorrecta')
-    mail = prompt ('Ingrese su email');
-}
-alert ('Dirección de email correcta')
+// while(gmail != mail)
+// {
+//     alert('Dirección de email incorrecta')
+//     mail = prompt ('Ingrese su email');
+// }
+// alert ('Dirección de email correcta')
 
-let clave ='coder';
-let contraseña = prompt ('Ingrese su contraseña');
+// let clave ='coder';
+// let contraseña = prompt ('Ingrese su contraseña');
 
-while(contraseña != clave)
-{
-    alert('Contraseña incorrecta')
-    contraseña = prompt ('Ingrese su contraseña');
-}
-alert ('Contraseña correcta, ¡Bienvenido!')
+// while(contraseña != clave)
+// {
+//     alert('Contraseña incorrecta')
+//     contraseña = prompt ('Ingrese su contraseña');
+// }
+// alert ('Contraseña correcta, ¡Bienvenido!')
 
-const menu = prompt('Seleccione la marca que desea comprar: Lenovo, HP, Asus')
-{
-   switch (menu) {
-    case "Lenovo".toLowerCase():
-        alert('Seleccionaste Lenovo, contamos con notebooks disponibles.')
-        break;
-   case "HP".toLowerCase():
-        alert('Seleccionaste HP, tenemos 2 notebooks disponibles.')
-        break;
-   case "Asus".toLowerCase():
-        alert('Seleccionaste Asus, contamos con 1 notebook disponible.')
-        break;
-    default:
-        alert('El producto seleccionado no se encuentra disponible, puedes adquirir los productos disponibles en la lista.')
-        break;
-   }
+// const menu = prompt('Seleccione la marca que desea comprar: Lenovo, HP, Asus')
+// {
+//    switch (menu) {
+//     case "Lenovo".toLowerCase():
+//         alert('Seleccionaste Lenovo, contamos con notebooks disponibles.')
+//         break;
+//    case "HP".toLowerCase():
+//         alert('Seleccionaste HP, tenemos 2 notebooks disponibles.')
+//         break;
+//    case "Asus".toLowerCase():
+//         alert('Seleccionaste Asus, contamos con 1 notebook disponible.')
+//         break;
+//     default:
+//         alert('El producto seleccionado no se encuentra disponible, puedes adquirir los productos disponibles en la lista.')
+//         break;
+//    }
     
-}
+// }
 
 
 // Mis Productos
@@ -102,4 +102,13 @@ searchBar.addEventListener('input', search)
  const datoGuardadoJavascript = JSON.parse(datoGuardadoString)
 
  console.log(datoGuardadoString)
- console.log(datoGuardadoJavascript.apellido)
+ console.log(datoGuardadoJavascript)
+
+
+ const { nombre, apellido, email } = objetoJavascript
+ 
+ const datosAdicionales = {...objetoJavascript, direccion:'Buenos Aires 2476', localidad:'Mar del Plata'}
+
+ console.log(objetoJavascript)
+ console.log(datosAdicionales)
+ 
