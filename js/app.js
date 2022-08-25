@@ -56,11 +56,13 @@ for(const Producto of Productos) {
 const botonClick = document.querySelector('#botonClick')
 console.log(botonClick);
 
-const mostrarMensaje = () => {
-    alert('El producto seleccionado se ha agregado al Carrito. Seleccione su producto desde la sección "Carrito de Compras" para efectuar su compra. ')
-}
-
-botonClick.addEventListener('click', mostrarMensaje) 
+botonClick.addEventListener('click', () => {
+    Swal.fire(
+        '¡Añadido con éxito!',
+        'El producto seleccionado se ha agregado al Carrito. Seleccione su producto desde la sección "Carrito de Compras" para efectuar su compra.',
+        'success'
+      )
+}) 
 
 
 const botonesAgregarCarrito = document.querySelectorAll('#agregarCarrito')
