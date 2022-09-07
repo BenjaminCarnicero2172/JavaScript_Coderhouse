@@ -1,0 +1,26 @@
+[
+    { 
+      "sku": "1234578",
+      "marca":"Lenovo",
+      "descripcion": "IdeaPad Gaming 3', descripcion: 'Procesador AMD Ryzen™ 5 5600H; Sistema Operativo: Windows 11 Home Single Language 64; Pantalla: 15.6 FHD (1920 x 1080), IPS, Anti-Glare, Non-Touch, 45%NTSC, 250 nits, 120Hz, LED Backlight, Narrow Bezel; 8 GB RAM; 512 GB SSD",
+      "precio": 224000
+    },
+    { 
+        "sku": "8725348",
+        "marca":"HP",
+        "descripcion": "15-EC1035LA AMD R5', descripcion: 'Procesador AMD Ryzen™ 5 5600H; Sistema Operativo: Windows 11 Home Single Language 64; Pantalla: 15.6 FHD (1920 x 1080), IPS, Anti-Glare, Non-Touch, 45%NTSC, 250 nits, 120Hz, LED Backlight, Narrow Bezel; 12 GB RAM; 256 GB SSD",
+        "precio": "$189999"
+    },
+    { 
+      "sku": "0990426",
+      "marca":"HP",
+      "descripcion": "NOTEBOOK R7 15-EH0009LA', descripcion: 'Procesador AMD Ryzen™ 7 5600H; Sistema Operativo: Windows 11 Home Single Language 64; Pantalla: 15.6 FHD (1920 x 1080), IPS, Anti-Glare, Non-Touch, 45%NTSC, 250 nits, 120Hz, LED Backlight, Narrow Bezel; 12 GB RAM; 1T GB hdd",
+      "precio": "$138999"
+    },
+    { 
+      "sku": "7653462",
+      "marca":"Asus",
+      "descripcion": "NOTEBOOK ASUS X515EA-EJ1343T', descripcion: 'Procesador Intel Core i5 5600H; Sistema Operativo: Windows 11 Home Single Language 64; Pantalla: 15.6 FHD (1920 x 1080), IPS, Anti-Glare, Non-Touch, 45%NTSC, 250 nits, 120Hz, LED Backlight, Narrow Bezel; 16 GB RAM; 1T GB SSD",
+      "precio": "$234999"
+    }
+]

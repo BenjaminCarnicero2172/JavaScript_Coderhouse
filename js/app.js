@@ -89,28 +89,39 @@ searchBar.addEventListener('input', search)
 // Storage
 // localStorage.setItem('nombreDelUsuario', 'Benjamin')
 
- const objetoJavascript = {
-    nombre: 'Benjamin',
-    apellido: 'Carnicero',
-    edad: '18',
-    email:'Benjacarni397@gmail.com'
-}
- const objetoString = JSON.stringify(objetoJavascript)
+//  const objetoJavascript = {
+//     nombre: 'Benjamin',
+//     apellido: 'Carnicero',
+//     edad: '18',
+//     email:'Benjacarni397@gmail.com'
+// }
+//  const objetoString = JSON.stringify(objetoJavascript)
 
-//  localStorage.setItem('objetoJavascript', objetoJavascript)
-//  localStorage.setItem('objetoString', objetoString)
+// //  localStorage.setItem('objetoJavascript', objetoJavascript)
+// //  localStorage.setItem('objetoString', objetoString)
 
- const datoGuardadoString = localStorage.getItem('objetoString')
- const datoGuardadoJavascript = JSON.parse(datoGuardadoString)
+//  const datoGuardadoString = localStorage.getItem('objetoString')
+//  const datoGuardadoJavascript = JSON.parse(datoGuardadoString)
 
- console.log(datoGuardadoString)
- console.log(datoGuardadoJavascript)
+//  console.log(datoGuardadoString)
+//  console.log(datoGuardadoJavascript)
 
 
- const { nombre, apellido, email } = objetoJavascript
+//  const { nombre, apellido, email } = objetoJavascript
  
- const datosAdicionales = {...objetoJavascript, direccion:'Buenos Aires 2476', localidad:'Mar del Plata'}
+//  const datosAdicionales = {...objetoJavascript, direccion:'Buenos Aires 2476', localidad:'Mar del Plata'}
 
- console.log(objetoJavascript)
- console.log(datosAdicionales)
+//  console.log(objetoJavascript)
+//  console.log(datosAdicionales)
  
+let allProductos = []
+ //fetch
+ const getAllProductos = async () => {
+    const response = await fetch('../data/productos.json')
+    const data = await response.json()
+    allProductos = data
+    renderizarListaProductos(allProductos)
+    console.log(data)
+ }
+
+ getAllProductos()
